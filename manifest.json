@@ -1,0 +1,17 @@
+{
+  "name": "MessagePassing",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "description": "Test Extension",
+
+  "permissions": [ "tabs" ],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts" : [{
+        "matches" :  ["*://*/*"],
+        "js" : ["content.js", "jquery-3.5.1.js"]
+    }]
+}
